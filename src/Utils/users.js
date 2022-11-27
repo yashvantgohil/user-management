@@ -8,6 +8,10 @@ export const userTableColumns = [
     label: "Phone",
   },
   {
+    accessor: "age",
+    label: "Age",
+  },
+  {
     accessor: "newsletter",
     label: "Newsletter",
     format: (value) => (value ? "✔️" : "✖️"),

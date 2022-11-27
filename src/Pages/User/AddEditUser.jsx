@@ -3,10 +3,12 @@ import React from "react";
 const AddEditUser = ({
   onSubmit,
   name,
+  age,
   phone,
   gender,
   newsletter,
   setName,
+  setAge,
   setPhone,
   setGender,
   setNewsletter,
@@ -25,12 +27,25 @@ const AddEditUser = ({
         />
       </div>
       <div className="element">
+        <label htmlFor="age">Age</label>
+        <input
+          value={age}
+          onChange={(e) => setAge(e.target.value)}
+          placeholder="Max 3 digit"
+          type="text"
+          maxLength={3}
+          pattern="[0-9]+"
+          required
+        />
+      </div>
+      <div className="element">
         <label htmlFor="phone">Phone</label>
         <input
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="10 digits number"
           type="text"
+          maxLength={10}
           pattern="[0-9]{10}"
           required
         />
@@ -40,17 +55,21 @@ const AddEditUser = ({
         <input
           type="radio"
           id="male"
+          name="gender"
           checked={gender === "male"}
           value="male"
           onChange={() => setGender("male")}
+          required
         />
         <label htmlFor="male">Male</label>
         <input
           type="radio"
           id="female"
+          name="gender"
           checked={gender === "female"}
           value="female"
           onChange={() => setGender("female")}
+          required
         />
         <label htmlFor="female">Female</label>
       </div>

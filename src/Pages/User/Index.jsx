@@ -10,6 +10,7 @@ const Index = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [id, setId] = useState("");
   const [name, setName] = useState("");
+  const [age, setAge] = useState("");
   const [phone, setPhone] = useState("");
   const [gender, setGender] = useState("");
   const [newsletter, setNewsletter] = useState(false);
@@ -36,6 +37,7 @@ const Index = () => {
     if (id) {
       const updateUser = newUsers.find((x) => x.id === id);
       updateUser.name = name;
+      updateUser.age = age;
       updateUser.phone = phone;
       updateUser.gender = gender;
       updateUser.newsletter = newsletter;
@@ -43,6 +45,7 @@ const Index = () => {
       newUsers.push({
         id: Math.random().toString(16).slice(2),
         name,
+        age,
         phone,
         gender,
         newsletter,
@@ -55,6 +58,7 @@ const Index = () => {
   const handleAddUser = () => {
     setId("");
     setName("");
+    setAge("");
     setPhone("");
     setNewsletter("");
     setGender("");
@@ -66,6 +70,7 @@ const Index = () => {
     if (editUser) {
       setId(editUser.id);
       setName(editUser.name);
+      setAge(editUser.age);
       setPhone(editUser.phone);
       setNewsletter(editUser.newsletter);
       setGender(editUser.gender);
@@ -97,11 +102,13 @@ const Index = () => {
           {...{
             id,
             name,
+            age,
             phone,
             gender,
             newsletter,
             setId,
             setName,
+            setAge,
             setPhone,
             setGender,
             setNewsletter,
