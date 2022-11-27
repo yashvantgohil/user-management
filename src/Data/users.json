@@ -1,0 +1,65 @@
+[
+  {
+    "id": "eb71f33c62d2d",
+    "name": "UserA",
+    "phone": "9876543210",
+    "newsletter": false,
+    "gender": "male"
+  },
+  {
+    "id": "b4d45122b902b",
+    "name": "UserB",
+    "phone": "9876543210",
+    "newsletter": false,
+    "gender": "female"
+  },
+  {
+    "id": "818657bc47b4b",
+    "name": "UserC",
+    "phone": "9876543210",
+    "newsletter": false,
+    "gender": "male"
+  },
+  {
+    "id": "36c7c8072ba82",
+    "name": "UserD",
+    "phone": "9876543210",
+    "newsletter": false,
+    "gender": "male"
+  },
+  {
+    "id": "dd3ab6d4f6e58",
+    "name": "UserE",
+    "phone": "9876543210",
+    "newsletter": false,
+    "gender": "male"
+  },
+  {
+    "id": "f4062a12e3bfc",
+    "name": "UserF",
+    "phone": "9876543210",
+    "newsletter": false,
+    "gender": "female"
+  },
+  {
+    "id": "204d3d97606d1",
+    "name": "UserG",
+    "phone": "9876543210",
+    "newsletter": false,
+    "gender": "male"
+  },
+  {
+    "id": "aa7ca171d8b2f",
+    "name": "UserH",
+    "phone": "9512896388",
+    "newsletter": true,
+    "gender": "male"
+  },
+  {
+    "id": "bbb9917ccba4e",
+    "name": "UserI",
+    "phone": "9876543210",
+    "newsletter": true,
+    "gender": "male"
+  }
+]

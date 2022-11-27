@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+th,
+td {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+th span {
+  margin-right: 1rem;
+}
+
+td button {
+  margin: 0px 5px;
+}
+
+input {
+  border: 1px solid gray;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  background: #f0f0f0;
+}
+
+.title {
+  font-size: larger;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.title button {
+  padding: 5px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.pagination button {
+  margin: 0px 10px;
+}
+
+form .element {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+form .radio input {
+  margin: 10px;
+  width: 10%;
+}
+
+form .checkbox input {
+  margin: 10px;
+  width: 10%;
+}
+
+form button {
+  padding: 5px 15px;
 }
